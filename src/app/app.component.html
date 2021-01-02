@@ -1,0 +1,39 @@
+<!--Rate Content-->
+<h5>Avalie o produto:</h5>
+<p-rating stars=5></p-rating>
+
+
+<br>
+<!--Breadcrumbs-->
+<p-breadcrumb [model]="items"></p-breadcrumb>
+
+<br>
+<!--Password Strength Meter-->
+<h5>Insira sua senha</h5>
+<input pPassword type="password" promptLabel="Insira uma senha" weakLabel="Fraca" mediumLabel="Média" strongLabel="Forte"/>
+
+<br><br><br>
+<!--Cards-->
+<p-card header="Indie" subheader="Playlist: 54 músicas" [style]="{width: '360px'}" styleClass="p-card-shadow">
+  <p-header>
+      <img alt="Card" src="assets/indie.jpg">
+  </p-header>
+  <p>Ouça Arctic Monkeys, Tame Impala, The Neighbourhood, The Strokes, Aurora e muito mais!</p>
+  
+      <ng-template pTemplate="footer">
+      <p-button label="Tocar" icon="pi pi-play" class="p-button-lg"></p-button>
+      <p-button label="Download" icon="pi pi-cloud-download" class="p-button-lg"></p-button>
+  </ng-template>
+</p-card>
+
+<br>
+<p-card header="Pop" subheader="Playlist: 62 músicas" [style]="{width: '360px'}" styleClass="p-card-shadow">
+  <p-header>
+      <img alt="Card" src="assets/pop.jpg">
+  </p-header>
+  <p>Ouça Ariana Grande, The Weeknd, Billie Eilish, Justin Bieber, OneRepublic e muito mais!</p>
+      <ng-template pTemplate="footer">
+        <p-button label="Tocar" icon="pi pi-play" class="p-button-lg"></p-button>
+        <p-button label="Download" icon="pi pi-cloud-download" class="p-button-lg"></p-button>
+      </ng-template>
+</p-card>
